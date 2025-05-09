@@ -20,7 +20,7 @@
 
 .boton-ingresar {
   background-color: #ab3de5;
- border-left: 2px solid #3a0556;
+  border-left: 2px solid #3a0556;
   border-right: 2px solid #3a0556;
   color: white;
   padding: 10px 20px;
@@ -37,14 +37,15 @@
 }
 
 .card-shadow {
-  /* border: none; */
   border-radius: 8px;
-  box-shadow: 0 8px 50px 
-#7f1b96;
+  /* box-shadow: 0 8px 50px 
+#7f1b96; */
+ box-shadow: 0 8px 50px 
+#dfdbe0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-shadow:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-10px);
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.18);
 }

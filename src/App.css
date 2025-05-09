@@ -1,19 +1,5 @@
 body {
-   /* background: linear-gradient(45deg, #d784ea, #f3e0f6); */
-
-   /* background: linear-gradient(to right,
-  #f3e0f6, #990cc0, #bc65d8, #d784e9, #671c7c,
-  #7f1b96, #ab3de5, #62068e, #bc41cf); */
-
-  /* background: radial-gradient(circle,
-  #f3e0f6, #990cc0, #bc65d8, #d784e9, #671c7c,
-  #7f1b96, #ab3de5, #62068e, #bc41cf); */
-
-  /* background: linear-gradient(45deg, #f3e0f6,#d784e9, #bc65d8, #ab3de5, #bc41cf ); */
-
-   /* background: linear-gradient(45deg, #f3e0f6,#d784e9, #bc65d8, #ab3de5, #bc41cf ); */
-
-      background: linear-gradient(#f3e0f6,#d784e9, #bc65d8, #ab3de5, #bc41cf );
+   background: linear-gradient(45deg, #f3e0f6,#d784e9, #bc65d8, #ab3de5, #bc41cf );
 
 }
 

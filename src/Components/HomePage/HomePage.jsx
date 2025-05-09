@@ -11,7 +11,7 @@ const HomePage = () => {
       <Card.Header className="card-hyf"><img
             src={logo}  
             alt="Logo"
-            style={{ width: '40%', height: 'auto', borderRadius: '5%'}} 
+            style={{ width: '40%', height: 'auto', borderRadius: '1%'}} 
           /></Card.Header>
       <Card.Body className="card-body-inicio">
         <Card.Title><h1>Carga de Resultados</h1></Card.Title>
