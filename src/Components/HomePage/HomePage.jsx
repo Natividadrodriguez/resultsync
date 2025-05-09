@@ -18,7 +18,10 @@ const HomePage = () => {
         <Card.Text>
           
         </Card.Text>
+        <Link to="/cargaresultados">
         <Button className="boton-ingresar">Ingresar</Button>
+        </Link>
+        
       </Card.Body>
       <Card.Footer className="text-muted card-hyf"><small>ResultSync © 2025</small></Card.Footer>
     </Card>
