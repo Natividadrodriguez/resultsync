@@ -1,10 +1,14 @@
 import React from 'react'
 import { Tab, Tabs, Form } from 'react-bootstrap'
 import './CargaResultados.css'
+import NavBar from "../NavBar/NavBar";
+
 
 const CargaResultados = () => {
   return (
-    <Tabs
+    <>
+      <NavBar />
+     <Tabs
       defaultActiveKey="hemograma" 
       transition={false}
       id="noanim-tab-example"
@@ -393,6 +397,8 @@ const CargaResultados = () => {
         </div>
       </Tab>
     </Tabs>
+    </>
+   
   );
 };
 

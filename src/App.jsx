@@ -5,6 +5,7 @@ import {useState} from 'react';
 import HomePage from "./Components/HomePage/HomePage"
 import CargaResultados from "./Components/CargaResultados/CargaResultados"
 import './App.css'
+import NavBar from "./Components/NavBar/NavBar";
 function App() {
   const [count, setCount] = useState(0)
 
