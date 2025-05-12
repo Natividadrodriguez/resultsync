@@ -1,10 +1,12 @@
-body {
-   background: linear-gradient(45deg, #f3e0f6,#d784e9, #bc65d8, #ab3de5, #bc41cf );
 
+html {
+  min-height: 100%;
+  background: linear-gradient(45deg, #f3e0f6, #d784e9, #bc65d8, #ab3de5, #bc41cf);
 }
 
-html, body, #root {
-  height: 100%;
+body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  background: none; 
 }
