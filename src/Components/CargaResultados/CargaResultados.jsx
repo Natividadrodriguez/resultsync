@@ -259,6 +259,23 @@ const CargaResultados = () => {
           </div>
           
         </Form.Group>
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Hemoglobina <br/>Glicosilada</Form.Label> 
+            <div className='solo-en-pdf'>Metodo: Inmunoturbidimetrico</div>
+            </div>
+            
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>4.8 a 5.9% de Hb total</div>
+            
+          </div>
+          
+          
+        </Form.Group>
       </Form>
      
     </div>     
@@ -294,6 +311,19 @@ const CargaResultados = () => {
           <div className="col-sm-4">
             <div style={{ fontSize: '1rem', color: '#000' }}>Hombres: 0,7-1,3 mg/dl</div>
             <div style={{ fontSize: '1rem', color: '#000' }}>Mujeres: 0,6- 1,1mg/dl</div>
+          </div>
+        </Form.Group>
+          <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Uricemia</Form.Label>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>3.40-7.00 mg/dl</div>
+          
           </div>
         </Form.Group>
 
@@ -350,15 +380,207 @@ const CargaResultados = () => {
       </Tab>
 
       <Tab eventKey="perfil-hepatico" title="Perfil Hepatico">
-        <div className="container">
-          <p>Tab content for Perfil Hepático</p>
-        </div>
+        <h4>Perfil Hepatico</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+          <Form.Label className="me-2 mb-0 fs-5">G.O.T.</Form.Label> 
+          <div className='solo-en-pdf'>Metodo: <br/>
+             Cinetico</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hasta 39 UI/L</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">G.P.T.</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Cinetico</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hasta 49 UI/L</div>
+          </div>
+        </Form.Group>
+      <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">G.G.T.</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Cinetico</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hasta 41 UI/L</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Fostasa <br/> Alcalina</Form.Label> 
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Cinetico</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>40-190 UI/L </div>
+          </div>
+          
+        </Form.Group>
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Bilirrubina <br/> Total</Form.Label> 
+             <div className='solo-en-pdf'>Metodo: DPD</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hasta 1.0 mg/dl</div>
+          </div>
+          
+        </Form.Group>
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Bilirrubina <br/>Indirecta</Form.Label> 
+            <div className='solo-en-pdf'>Metodo: DPD</div>
+            </div>
+            
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hasta 0.20 mg/dl</div>
+            
+          </div>
+          
+          
+        </Form.Group>
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Bilirrubina <br/> Directa</Form.Label> 
+             <div className='solo-en-pdf'>Metodo: DPD</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>95-105 mEq/L </div>
+          </div>
+          
+        </Form.Group>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Uricemia</Form.Label> 
+             <div className='solo-en-pdf'>Metodo: <br/>
+             Enzimatico</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>3.40-7.00 mg/dl</div>
+          </div>
+          
+        </Form.Group>
+
+        
+        
+      </Form>
+     
+    </div>     
+        
       </Tab>
 
       <Tab eventKey="perfil-lipidico" title="Perfil Lipidico">
-        <div className="container">
-          <p>Tab content for Perfil Lipídico</p>
+          <h4>Perfil Lipidico</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+          <Form.Label className="me-2 mb-0 fs-5">Colesterol <br/>Total</Form.Label> 
+          <div className='solo-en-pdf'>Metodo: <br/>
+             Enzimatico</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Menor a 200 mg/dl</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Colesterol <br/> HDL</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Enzimatico</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Mayor a 40 mg/dl</div>
+          </div>
+        </Form.Group>
+      <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Colesterol <br/>LDL</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Enzimatico</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Menor a 130 mg/dl</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Trigliceridos</Form.Label> 
+            <div className='solo-en-pdf'>Metodo: <br/>
+             Enzimatico</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Menor a 150 mg/dl</div>
+          </div>
+          
+        </Form.Group>
+
+        </Form>
         </div>
+
+
+
+         
       </Tab>
 
       <Tab eventKey="hormonas" title="Hormonas">
@@ -368,9 +590,129 @@ const CargaResultados = () => {
       </Tab>
 
       <Tab eventKey="orina" title="Orina">
-        <div className="container">
-          <p>Tab content for Orina</p>
-        </div>
+         <div>
+      <h4>Orina Completa</h4>
+    </div>
+    <br />
+    <div><h5>Examen Fisico-quimico</h5></div>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Color</Form.Label> 
+            </div>
+            
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Aspecto</Form.Label> 
+            </div>
+          
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">PH</Form.Label>
+            </div>
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Densidad</Form.Label>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+        </Form.Group>
+
+      
+      </Form>
+    </div>
+     <div><h5>Examen Citologico</h5></div>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Celulas</Form.Label> 
+            </div>
+            
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Leucocitos</Form.Label> 
+            </div>
+          
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Hematies</Form.Label>
+            </div>
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Mucus</Form.Label>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+        </Form.Group>
+
+      
+      </Form>
+    </div>
+
+    <div>
+      <h5>Observaciones</h5>
+    </div>
+   <div className="container">
+      <Form>
+       <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+           
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+        </Form.Group>
+  
+    </Form>
+   </div>
+  
+
+
+
+
+
+
+
+
       </Tab>
 
       <Tab eventKey="coagulacion" title="Coagulación">
