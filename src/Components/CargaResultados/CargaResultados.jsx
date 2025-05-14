@@ -9,11 +9,61 @@ const CargaResultados = () => {
     <>
       <NavBar />
      <Tabs
-      defaultActiveKey="hemograma" 
+      defaultActiveKey="datos-paciente" 
       transition={false}
       id="noanim-tab-example"
       className="mb-3"
     >
+      <Tab eventKey="datos-paciente" title="Datos del Paciente">
+        <div>
+          <h4>Datos del Paciente</h4>
+        </div>
+  <div className="container">
+    
+    <Form>
+      <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>Nombre</Form.Label>
+          <Form.Control type="text" placeholder="Ingrese nombre" />
+        </div>
+      </Form.Group>
+
+      <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>Apellido</Form.Label>
+          <Form.Control type="text" placeholder="Ingrese apellido" />
+        </div>
+      </Form.Group>
+
+      <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>DNI</Form.Label>
+          <Form.Control type="text" placeholder="Ingrese DNI" />
+        </div>
+      </Form.Group>
+
+      <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>Fecha de ingreso</Form.Label>
+          <Form.Control type="date" />
+        </div>
+      </Form.Group>
+
+      <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>N° de protocolo</Form.Label>
+          <Form.Control type="text" placeholder="Ingrese número de protocolo" />
+        </div>
+      </Form.Group>
+        <Form.Group className="row align-items-center mb-3">
+        <div className="col-lg-4 col-md-8 d-flex align-items-center">
+          <Form.Label className="me-2 mb-0 fs-5" style={{ minWidth: '130px' }}>Solicitante</Form.Label>
+          <Form.Control type="text" placeholder="Ingrese solicitante" />
+        </div>
+      </Form.Group>
+    </Form>
+  </div>
+</Tab>
      <Tab eventKey="hemograma" title="Hemograma">
   <div>
     <h4>Hemograma</h4>
