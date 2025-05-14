@@ -48,3 +48,35 @@ border-bottom: 2px solid #62068e
 .solo-en-pdf{
   display: none;
 }
+
+.boton-formulario {
+  background: linear-gradient(135deg, #ab3de5, #d784ea);
+  border: 2px solid #62068e;
+  color: white;
+  padding: 12px 26px;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(171, 61, 229, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  min-width: 200px;   
+  flex-grow: 0;      
+  flex-shrink: 0;     
+  flex-basis: auto; 
+
+}
+
+.boton-formulario:hover {
+ 
+  background: linear-gradient(135deg, #62068e, #ab3de5);
+  border-color: #3a0556;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(75, 12, 110, 0.4);
+  cursor: pointer;
+}
+
+.botones-container {
+  display: flex;
+  gap: 50px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}

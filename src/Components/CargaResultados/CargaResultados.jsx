@@ -789,6 +789,14 @@ const CargaResultados = () => {
         </div>
       </Tab>
     </Tabs>
+    <div className="botones-container mt-5">
+    <button className="boton-formulario">
+      📄 Generar PDF
+    </button>
+    <button className="boton-formulario" >
+      ✉️ Enviar por Email
+    </button>
+  </div>
     </>
    
   );
