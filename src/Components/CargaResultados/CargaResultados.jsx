@@ -766,15 +766,153 @@ const CargaResultados = () => {
       </Tab>
 
       <Tab eventKey="coagulacion" title="Coagulación">
-        <div className="container">
-          <p>Tab content for Coagulación</p>
+
+<div>
+  
+        <h4>Coagulograma</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+          <Form.Label className="me-2 mb-0 fs-5">TP</Form.Label> 
+          <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>12,3-15,1 segundos</div>
+          </div>
+        </Form.Group>
+
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">% de <br />Actividad</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>&gt;70%</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">KPTT</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>28,0 a 42,0 segundos</div>
+          </div>
+        </Form.Group>
+      <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">RIN</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>0,9 a 1,1</div>
+          </div>
+        </Form.Group>
+
+    
+
+        </Form>
         </div>
+</div>
+
+
+
+
       </Tab>
 
-      <Tab eventKey="otros-electrolitos" title="Otros Electrolitos">
-        <div className="container">
-          <p>Tab content for Otros Electrolitos</p>
+      <Tab eventKey="perfil-mineral" title="Perfil Mineral">
+        <div>
+  
+        <h4>Perfil Mineral</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+          <Form.Label className="me-2 mb-0 fs-5">Calcio Total</Form.Label> 
+          <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>8.5-10.2 mg/dL</div>
+          </div>
+        </Form.Group>
+
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Calcio Ionico</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>4.8-5.6 mg/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Fosforo</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Adultos: 2.8 a 4.5 mg/dL</div>
+            <div style={{ fontSize: '1rem', color: '#000' }}>Niños: 4.0 a 7.0 mg/dL</div>
+          </div>
+        </Form.Group>
+      <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Magnesio</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>1.7-2.2 mg/dL</div>
+          </div>
+        </Form.Group>
+
+    
+
+        </Form>
         </div>
+</div>
       </Tab>
 
       <Tab eventKey="perfil-hierro" title="Perfil de Hierro">

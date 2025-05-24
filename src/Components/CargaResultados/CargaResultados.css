@@ -12,13 +12,7 @@
 border-bottom: 2px solid #62068e
 }
 
-/* .nav-tabs {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-bottom: 2px solid #62068e; 
-  margin-bottom: 10px;  
-} */
+
 
 .nav-tabs .nav-link {
   background-color: transparent; 
