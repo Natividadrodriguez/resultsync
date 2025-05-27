@@ -916,15 +916,194 @@ const CargaResultados = () => {
       </Tab>
 
       <Tab eventKey="perfil-hierro" title="Perfil de Hierro">
-        <div className="container">
-          <p>Tab content for Perfil de Hierro</p>
+         <div>
+  
+        <h4>Perfil de Hierro</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+          <Form.Label className="me-2 mb-0 fs-5">Ferremia</Form.Label> 
+          <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+             
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>Hombres:75–150 mcg/dL</div>
+             <div style={{ fontSize: '1rem', color: '#000' }}>Mujeres:60–140 mcg/dL</div>
+          </div>
+        </Form.Group>
+
+         <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Ferritina</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>30-300 ng/mL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">Transferrina</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>204 y 360 mg/dL</div>
+          </div>
+        </Form.Group>
+      <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+            <Form.Label className="me-2 mb-0 fs-5">% Saturacion <br />Transferrina</Form.Label>
+            <div className='solo-en-pdf'>Metodo: <br/>
+             ?</div>
+            </div>
+              
+            <Form.Control type="text" placeholder="Ingrese valor" />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>20–50%</div>
+          </div>
+        </Form.Group>
+
+    
+
+        </Form>
         </div>
+</div>
       </Tab>
 
       <Tab eventKey="personalizado" title="Personalizado">
-        <div className="container">
-          <p>Tab content for Personalizado</p>
-        </div>
+         <div>
+
+    <div className="container">
+      <Form>
+
+        <Form.Group className="row align-items-start mb-3">
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Determinación" 
+              className="mb-1"
+            />
+            
+          </div>
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Ingrese valor" 
+            />
+          </div>
+
+          <div className='col-md-4 col-6'>
+            <Form.Control 
+              type="text" 
+              placeholder="Valores normales" 
+            />
+            
+          </div>
+
+          <div className='col-md-4'>
+              Metodo: <br/>
+              <Form.Control 
+                type="text" 
+                placeholder="Ingrese método" 
+              />
+            </div>
+
+        </Form.Group>
+ <br />
+ <br />
+
+         <Form.Group className="row align-items-start mb-3">
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Determinación" 
+              className="mb-1"
+            />
+            
+          </div>
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Ingrese valor" 
+            />
+          </div>
+
+          <div className='col-md-4 col-6'>
+            <Form.Control 
+              type="text" 
+              placeholder="Valores normales" 
+            />
+            
+          </div>
+
+          <div className='col-md-4'>
+              Metodo: <br/>
+              <Form.Control 
+                type="text" 
+                placeholder="Ingrese método" 
+              />
+            </div>
+
+        </Form.Group>
+        <br />
+        <br />
+        <Form.Group className="row align-items-start mb-3">
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Determinación" 
+              className="mb-1"
+            />
+            
+          </div>
+          <div className='col-md-4 col-6 mb-2 mb-md-0'>
+            <Form.Control 
+              type="text" 
+              placeholder="Ingrese valor" 
+            />
+          </div>
+
+          <div className='col-md-4 col-6'>
+            <Form.Control 
+              type="text" 
+              placeholder="Valores normales" 
+            />
+            
+          </div>
+
+          <div className='col-md-4'>
+              Metodo: <br/>
+              <Form.Control 
+                type="text" 
+                placeholder="Ingrese método" 
+              />
+            </div>
+
+        </Form.Group>
+
+
+          
+      </Form>
+    </div>
+  </div>
       </Tab>
     </Tabs>
     <div className="botones-container mt-5">
