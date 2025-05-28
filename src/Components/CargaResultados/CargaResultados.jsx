@@ -2,6 +2,8 @@ import React from 'react'
 import { Tab, Tabs, Form } from 'react-bootstrap'
 import './CargaResultados.css'
 import NavBar from "../NavBar/NavBar";
+import datosTabs from './datosTabs'
+import datosPaciente from './datosPaciente'
 
 
 const CargaResultados = () => {
