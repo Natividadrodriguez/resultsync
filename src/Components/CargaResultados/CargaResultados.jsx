@@ -1183,6 +1183,122 @@ onChange={(e) => setDatosPaciente({ ...datosPaciente, "Solicitante": e.target.va
     </div>
   </div>
 </Tab>
+<Tab eventKey="proteinograma" title="Proteinograma">
+  <div>
+    <h4>Proteinograma</h4>
+    <div className="container">
+      <Form>
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Proteínas <br />Totales</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.ProteinasTotales || ''}
+              onChange={(e) => setResultados({ ...resultados, ProteinasTotales: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>6.0 - 8.3 g/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Albúmina</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.Albumina || ''}
+              onChange={(e) => setResultados({ ...resultados, Albumina: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>3.5 - 5.0 g/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Alpha 1</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.Alpha1 || ''}
+              onChange={(e) => setResultados({ ...resultados, Alpha1: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>0.1 - 0.3 g/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Alpha 2</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.Alpha2 || ''}
+              onChange={(e) => setResultados({ ...resultados, Alpha2: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>0.6 - 1.0 g/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Beta</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.Beta || ''}
+              onChange={(e) => setResultados({ ...resultados, Beta: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>0.7 - 1.2 g/dL</div>
+          </div>
+        </Form.Group>
+
+        <Form.Group className="row align-items-center mb-3">
+          <div className='col-lg-4 col-md-8 d-flex align-items-center'>
+            <div style={{ minWidth: '130px', flexShrink: 0 }}>
+              <Form.Label className="me-2 mb-0 fs-5">Gamma</Form.Label>
+              <div className='solo-en-pdf'>Metodo: <br />?</div>
+            </div>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese valor"
+              value={resultados.Gamma || ''}
+              onChange={(e) => setResultados({ ...resultados, Gamma: e.target.value })}
+            />
+          </div>
+          <div className="col-sm-4">
+            <div style={{ fontSize: '1rem', color: '#000' }}>0.6 - 1.5 g/dL</div>
+          </div>
+        </Form.Group>
+      </Form>
+    </div>
+  </div>
+</Tab>
 
       <Tab eventKey="personalizado" title="Personalizado">
          <div>
