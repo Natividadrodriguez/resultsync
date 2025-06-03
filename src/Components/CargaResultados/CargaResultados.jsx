@@ -4,6 +4,7 @@ import './CargaResultados.css'
 import NavBar from "../NavBar/NavBar";
 import datosTabs from './datosTabs'
 import datosPaciente from './datosPaciente'
+import datosPersonalizado from './datosPersonalizado';
 
 
 
@@ -17,7 +18,15 @@ const CargaResultados = () => {
   "Solicitante": ""
 });
 
+const [personalizado, setPersonalizado] = React.useState({
+  det1: { nombre: '', valor: '', normales: '', metodo: '' },
+  det2: { nombre: '', valor: '', normales: '', metodo: '' },
+  det3: { nombre: '', valor: '', normales: '', metodo: '' },
+});
+
+
 const [resultados, setResultados] = useState({
+  // Hemograma
   Eritrocitos: "",
   Hematocrito: "",
   Hemoglobina: "",
@@ -30,7 +39,75 @@ const [resultados, setResultados] = useState({
   Eosinófilos: "",
   Basófilos: "",
   Linfocitos: "",
-  Monocitos: ""
+  Monocitos: "",
+
+  // Orina Completa
+  OrinaColor: "",
+  OrinaAspecto: "",
+  OrinaPH: "",
+  OrinaDensidad: "",
+  OrinaCelulas: "",
+  OrinaLeucocitos: "",
+  OrinaHematies: "",
+  OrinaMucus: "",
+  OrinaObservaciones: "",
+
+  // Glucemia, Insulina, HOMA
+  Glucemia: "",
+  Insulina: "",
+  IndiceHOMA: "",
+  HemoglobinaGlicosilada: "",
+
+  // Perfil Renal
+  Urea: "",
+  Creatinina: "",
+  Uricemia: "",
+
+  // Ionograma
+  Sodio: "",
+  Potasio: "",
+  Cloro: "",
+
+  // Perfil Hepático
+  GOT: "",
+  GPT: "",
+  GGT: "",
+  FosfatasaAlcalina: "",
+  BilirrubinaTotal: "",
+  BilirrubinaIndirecta: "",
+  BilirrubinaDirecta: "",
+
+  // Perfil Lipídico
+  ColesterolTotal: "",
+  ColesterolHDL: "",
+  ColesterolLDL: "",
+  Trigliceridos: "",
+
+  // Coagulación
+  TP: "",
+  ActividadTP: "",
+  KPTT: "",
+  RIN: "",
+
+  // Perfil Mineral
+  CalcioTotal: "",
+  CalcioIonico: "",
+  Fosforo: "",
+  Magnesio: "",
+
+  // Perfil de Hierro
+  Ferremia: "",
+  Ferritina: "",
+  Transferrina: "",
+  SaturacionTransferrina: "",
+
+  // Proteinograma
+  ProteinasTotales: "",
+  Albumina: "",
+  Alpha1: "",
+  Alpha2: "",
+  Beta: "",
+  Gamma: ""
 });
   return (
     <>
@@ -1300,123 +1377,161 @@ onChange={(e) => setDatosPaciente({ ...datosPaciente, "Solicitante": e.target.va
   </div>
 </Tab>
 
-      <Tab eventKey="personalizado" title="Personalizado">
-         <div>
+     <Tab eventKey="personalizado" title="Personalizado">
+  <div className="container">
+    <Form>
+     
+      <Form.Group className="row align-items-start mb-3">
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Determinación" 
+            value={personalizado.det1.nombre}
+            onChange={e => setPersonalizado({
+              ...personalizado, 
+              det1: { ...personalizado.det1, nombre: e.target.value }
+            })}
+            className="mb-1"
+          />
+        </div>
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese valor" 
+            value={personalizado.det1.valor}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det1: { ...personalizado.det1, valor: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4 col-6'>
+          <Form.Control 
+            type="text" 
+            placeholder="Valores normales" 
+            value={personalizado.det1.normales}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det1: { ...personalizado.det1, normales: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4'>
+          Metodo: <br/>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese método" 
+            value={personalizado.det1.metodo}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det1: { ...personalizado.det1, metodo: e.target.value }
+            })}
+          />
+        </div>
+      </Form.Group>
 
-    <div className="container">
-      <Form>
+     
+      <Form.Group className="row align-items-start mb-3">
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Determinación" 
+            value={personalizado.det2.nombre}
+            onChange={e => setPersonalizado({
+              ...personalizado, 
+              det2: { ...personalizado.det2, nombre: e.target.value }
+            })}
+            className="mb-1"
+          />
+        </div>
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese valor" 
+            value={personalizado.det2.valor}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det2: { ...personalizado.det2, valor: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4 col-6'>
+          <Form.Control 
+            type="text" 
+            placeholder="Valores normales" 
+            value={personalizado.det2.normales}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det2: { ...personalizado.det2, normales: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4'>
+          Metodo: <br/>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese método" 
+            value={personalizado.det2.metodo}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det2: { ...personalizado.det2, metodo: e.target.value }
+            })}
+          />
+        </div>
+      </Form.Group>
 
-        <Form.Group className="row align-items-start mb-3">
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Determinación" 
-              className="mb-1"
-            />
-            
-          </div>
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Ingrese valor" 
-            />
-          </div>
-
-          <div className='col-md-4 col-6'>
-            <Form.Control 
-              type="text" 
-              placeholder="Valores normales" 
-            />
-            
-          </div>
-
-          <div className='col-md-4'>
-              Metodo: <br/>
-              <Form.Control 
-                type="text" 
-                placeholder="Ingrese método" 
-              />
-            </div>
-
-        </Form.Group>
- <br />
- <br />
-
-         <Form.Group className="row align-items-start mb-3">
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Determinación" 
-              className="mb-1"
-            />
-            
-          </div>
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Ingrese valor" 
-            />
-          </div>
-
-          <div className='col-md-4 col-6'>
-            <Form.Control 
-              type="text" 
-              placeholder="Valores normales" 
-            />
-            
-          </div>
-
-          <div className='col-md-4'>
-              Metodo: <br/>
-              <Form.Control 
-                type="text" 
-                placeholder="Ingrese método" 
-              />
-            </div>
-
-        </Form.Group>
-        <br />
-        <br />
-        <Form.Group className="row align-items-start mb-3">
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Determinación" 
-              className="mb-1"
-            />
-            
-          </div>
-          <div className='col-md-4 col-6 mb-2 mb-md-0'>
-            <Form.Control 
-              type="text" 
-              placeholder="Ingrese valor" 
-            />
-          </div>
-
-          <div className='col-md-4 col-6'>
-            <Form.Control 
-              type="text" 
-              placeholder="Valores normales" 
-            />
-            
-          </div>
-
-          <div className='col-md-4'>
-              Metodo: <br/>
-              <Form.Control 
-                type="text" 
-                placeholder="Ingrese método" 
-              />
-            </div>
-
-        </Form.Group>
-
-
-          
-      </Form>
-    </div>
+     
+      <Form.Group className="row align-items-start mb-3">
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Determinación" 
+            value={personalizado.det3.nombre}
+            onChange={e => setPersonalizado({
+              ...personalizado, 
+              det3: { ...personalizado.det3, nombre: e.target.value }
+            })}
+            className="mb-1"
+          />
+        </div>
+        <div className='col-md-4 col-6 mb-2 mb-md-0'>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese valor" 
+            value={personalizado.det3.valor}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det3: { ...personalizado.det3, valor: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4 col-6'>
+          <Form.Control 
+            type="text" 
+            placeholder="Valores normales" 
+            value={personalizado.det3.normales}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det3: { ...personalizado.det3, normales: e.target.value }
+            })}
+          />
+        </div>
+        <div className='col-md-4'>
+          Metodo: <br/>
+          <Form.Control 
+            type="text" 
+            placeholder="Ingrese método" 
+            value={personalizado.det3.metodo}
+            onChange={e => setPersonalizado({
+              ...personalizado,
+              det3: { ...personalizado.det3, metodo: e.target.value }
+            })}
+          />
+        </div>
+      </Form.Group>
+    </Form>
   </div>
-      </Tab>
+</Tab>
     </Tabs>
     <div className="botones-container mt-5">
     <button className="boton-formulario">
